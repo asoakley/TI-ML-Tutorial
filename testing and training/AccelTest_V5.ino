@@ -11,7 +11,7 @@ Version 5 of Accelerometer Testing Code
 #define OSCILLATE           2
 #define FORWARD             3
 #define NUM_STATES          3
-#define SAMPLE_PERIOD       25 // 0.1 seconds, 10 Hz
+#define SAMPLE_PERIOD       25 // 25 ms, 40 Hz
 #define MOTOR_PERIOD        500 // 0.5 seconds
 
 const int bmi160_i2c_addr = 0x69;
@@ -33,6 +33,10 @@ void setup() {
   pinMode(LP_RGB_LED_RED_PIN, OUTPUT);
   pinMode(LP_RGB_LED_BLUE_PIN, OUTPUT); 
   pinMode(LP_RGB_LED_GREEN_PIN, OUTPUT);
+
+  digitalWrite(LP_RGB_LED_RED_PIN, LOW);
+  digitalWrite(LP_RGB_LED_BLUE_PIN, LOW);
+  digitalWrite(LP_RGB_LED_GREEN_PIN, LOW);
 
   // Initialize LaunchPad buttons as inputs
   pinMode(LP_S1_PIN, INPUT_PULLUP);
@@ -58,7 +62,6 @@ void setup() {
 
   // Wait two seconds before starting
   delay(2000);
-  digitalWrite(LP_RGB_LED_BLUE_PIN, HIGH);
 }
 
 void loop() {
@@ -80,6 +83,9 @@ void loop() {
   Serial.print(",");
   Serial.print(gz);
   Serial.println();
+
+  // Update RGB LED
+  Update_RGB_LED(gx,gy,gz);
 
   // Delay the loop to control audio sampling rate
   delay(SAMPLE_PERIOD);
@@ -128,7 +134,7 @@ void updateMotors(){
   static char toggle = 0;
   
   setMotorSpeed(BOTH_MOTORS,15); // Keep motors at constant speed
-  digitalWrite(LP_RGB_LED_RED_PIN, !digitalRead(LP_RGB_LED_RED_PIN)); // Toggle RED
+  digitalWrite(LP_RED_LED_PIN, !digitalRead(LP_RED_LED_PIN)); // Toggle RED
   
   switch(motorState){
     case FORWARD_REVERSE:
@@ -155,4 +161,15 @@ void updateMotors(){
     default: break;
   }
   toggle ^= 1;
+}
+
+void Update_RGB_LED(float x, float y, float z){
+  float g = 4.5;
+  if((x > g) || (x < -g)) digitalWrite(LP_RGB_LED_RED_PIN, HIGH);
+  else digitalWrite(LP_RGB_LED_RED_PIN, LOW);
+  if((y > g) || (y < -g)) digitalWrite(LP_RGB_LED_GREEN_PIN, HIGH);
+  else digitalWrite(LP_RGB_LED_GREEN_PIN, LOW);
+  if((z > g) || (z < -g)) digitalWrite(LP_RGB_LED_BLUE_PIN, HIGH);
+  else digitalWrite(LP_RGB_LED_BLUE_PIN, LOW);
+  
 }
