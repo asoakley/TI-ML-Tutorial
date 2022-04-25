@@ -100,12 +100,8 @@ void audioPredict() {
   setMotorSpeed(BOTH_MOTORS,15);
   // Move motors for set time when detecting motion commands
   // If a command is not detected, program immediately runs back through loop
-  if (pred == "Go"){
+  if (pred == "Drive"){
     setMotorDirection(BOTH_MOTORS, MOTOR_DIR_FORWARD);
-    delay(1000);
-  }
-  if (pred == "Back it up"){
-    setMotorDirection(BOTH_MOTORS, MOTOR_DIR_BACKWARD);
     delay(1000);
   }
   if (pred == "Clockwise"){
