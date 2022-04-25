@@ -1,3 +1,10 @@
+// North Carolina State University ECE Senior Design Team 3 Spring 2022
+// April 25, 2022
+// TI Machine Learning Robotics
+// AudioPredictions_V1
+// Keyword spotting for Drive and Clockwise
+// Available at https://github.com/asoakley/TI-ML-Tutorial
+
 #include <TI-ML-Audio-Classification_inferencing.h>
 
 // RSLK and accelerometer libraries
