@@ -1,6 +1,8 @@
-// North Carolina State University ECE Senior Design Team 3
+// North Carolina State University ECE Senior Design Team 3 Spring 2022
+// April 25, 2022
 // TI Machine Learning Robotics
-// Data Sampling Template Code
+// DataSamplingTemplate
+// A code template to get most sensors up for machine learning
 // Available at https://github.com/asoakley/TI-ML-Tutorial
 
 // RSLK library
