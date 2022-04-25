@@ -1,5 +1,10 @@
+// North Carolina State University ECE Senior Design Team 3 Spring 2022
+// April 25, 2022
+// TI Machine Learning Robotics
 // AccelPredictions_V2
 // Continuous forward drive accelerometer classification
+// Available at https://github.com/asoakley/TI-ML-Tutorial
+
 
 // Change this include to match the name of your imported Edge Impulse Arduino library
 #include <TI-ML-Terrain-Recognition_inferencing.h>
