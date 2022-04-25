@@ -1,7 +1,9 @@
-/*
-Version 2 of Audio Testing Code
-2/22/2022
-*/
+// North Carolina State University ECE Senior Design Team 3 Spring 2022
+// April 25, 2022
+// TI Machine Learning Robotics
+// Version 2 of Audio Testing Code
+// Read the Analog Mic pin and flashes LEDs if past noise floor threshold
+// Available at https://github.com/asoakley/TI-ML-Tutorial
 
 #include <SimpleRSLK.h>    
 #define MIC_PWR         5   // RLSK Pin P4.1, BoosterPack(Energia) Pin J1-5
