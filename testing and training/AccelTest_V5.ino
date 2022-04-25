@@ -1,7 +1,9 @@
-/*
-Version 5 of Accelerometer Testing Code
-2/22/2022
-*/
+// North Carolina State University ECE Senior Design Team 3 Spring 2022
+// April 25, 2022
+// TI Machine Learning Robotics
+// Version 5 of Accelerometer Testing Code
+// Gathering Accelerometer samples in oscillating and forward/reverse motion
+// Available at https://github.com/asoakley/TI-ML-Tutorial
 
 #include <SimpleRSLK.h>    
 #include <BMI160Gen.h>
