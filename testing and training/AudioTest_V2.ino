@@ -8,7 +8,7 @@
 #include <SimpleRSLK.h>    
 #define MIC_PWR         5   // RLSK Pin P4.1, BoosterPack(Energia) Pin J1-5
 #define MIC_OUT         6   // RSLK Pin P4.3, BoosterPack(Energia) Pin J1-6
-#define SAMPLE_PERIOD   1 // 1ms, 1000 Hz
+#define SAMPLE_PERIOD   1   // 1ms, 1000 Hz
 
 void setup() {
   
