@@ -1,4 +1,5 @@
-// North Carolina State University ECE Senior Design Team 3
+// North Carolina State University ECE Senior Design Team 3 Spring 2022
+// April 25, 2022
 // TI Machine Learning Robotics
 // Live Classification Template Code
 // Available at https://github.com/asoakley/TI-ML-Tutorial
