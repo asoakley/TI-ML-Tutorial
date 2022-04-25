@@ -11,7 +11,7 @@ Version 5 of Accelerometer Testing Code
 #define OSCILLATE           2
 #define FORWARD             3
 #define NUM_STATES          3
-#define SAMPLE_PERIOD       25 // 25 ms, 40 Hz
+#define SAMPLE_PERIOD       20 // 20 ms, 50 Hz
 #define MOTOR_PERIOD        500 // 0.5 seconds
 
 const int bmi160_i2c_addr = 0x69;
