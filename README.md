@@ -9,7 +9,6 @@
         <li>Eagle Libraries contains the libraries needed to recreate our schematic and board</li>
         <li>PCB Gerbers are the gerber files that can be sent to a manufacturer for printing</li>
     </ul>
-    
     <li>libraries folder contains the libraries used in Arduino IDE to get the MSP432 microcontroller and the RSLK MAX to function. 
     It also contains two pretrained Edge Impulse libraries that we have tested</li>
     <li>prediction folder contains the Arduino code for running edge impulse models. 
