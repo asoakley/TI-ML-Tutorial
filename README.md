@@ -15,6 +15,10 @@
     It contains code for both Audio and Accelerometer Machine Learning as well as a template code for any sensors you would like to have.</li>
     <li>test and training folder contains Arduino code to sample accelerometer and/or audio data of the RSLK MAX</li>
 </ul>
-
+    
+<p> Check out our Hackster.io pages for
+<a href="https://www.hackster.io/nc-state-ece-design-team-3-fall-2021-spring-2022/ti-rslk-machine-learning-robotics-terrain-recognition-a90367">Terrain Recognition</a> and 
+<a href="https://www.hackster.io/nc-state-ece-design-team-3-fall-2021-spring-2022/ti-rslk-machine-learning-robotics-keyword-recognition-d96755">Keyword Recognition</a>!
+</p>
 </body>
 </html>
